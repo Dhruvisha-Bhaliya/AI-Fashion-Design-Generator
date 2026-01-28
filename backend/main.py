@@ -15,6 +15,13 @@ HF_URL = "https://router.huggingface.co/hf-inference/models/stabilityai/stable-d
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {
+        "status": "running",
+        "message": "AI Fashion Design Generator API is live"
+    }
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
