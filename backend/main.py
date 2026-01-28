@@ -24,7 +24,7 @@ def root():
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://ai-fashion-design-generator-sand.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
