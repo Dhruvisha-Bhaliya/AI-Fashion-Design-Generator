@@ -9,7 +9,7 @@ load_dotenv()
 HF_TOKEN = os.getenv("HF_API_KEY")
 
 if not HF_TOKEN:
-    raise RuntimeError("HF_TOKEN not found")
+    print("WARNING: HF_TOKEN not set")
 
 HF_URL = "https://router.huggingface.co/hf-inference/models/stabilityai/stable-diffusion-xl-base-1.0"
 
