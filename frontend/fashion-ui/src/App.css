@@ -1,0 +1,17 @@
+.app {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 30px;
+}
+
+.app h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.app-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
